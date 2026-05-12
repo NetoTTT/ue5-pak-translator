@@ -1,0 +1,23 @@
+# Build output
+TextTool/bin/
+TextTool/obj/
+
+# Translation output (potentially large, generated)
+output/
+
+# Tools (binaries, not redistributable)
+tools/*.exe
+tools/*.dll
+
+# Extracted game files (too large, not redistributable)
+Extracted/
+ModFiles/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo

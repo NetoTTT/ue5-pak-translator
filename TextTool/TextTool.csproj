@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Download UAssetAPI.dll from https://github.com/atenfyr/UAssetAPI/releases
+         and place it in the tools/ folder, then update this path. -->
+    <Reference Include="UAssetAPI">
+      <HintPath>..\tools\UAssetAPI.dll</HintPath>
+    </Reference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+</Project>

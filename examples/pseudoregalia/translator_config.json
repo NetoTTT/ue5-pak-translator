@@ -1,0 +1,58 @@
+{
+  "game_name": "Pseudoregalia PT-BR",
+  "lm_studio_url": "http://localhost:1234/v1/chat/completions",
+  "model": "google/gemma-4-e4b",
+  "temperature": 0.2,
+
+  "input_json":  "../../output/texts.json",
+  "output_json": "../../output/texts_translated.json",
+  "cache_file":  "../../output/cache.json",
+
+  "system_prompt": "Você é um tradutor profissional de jogos de videogame do inglês para o português brasileiro. Regras obrigatórias:\n1. Retorne SOMENTE o texto traduzido, sem explicações, sem aspas extras, sem prefixo.\n2. Tags de cor DEVEM ser preservadas EXATAMENTE como estão, incluindo o texto entre parênteses: [#cf2525](tower) → [#cf2525](torre) — traduza o texto dentro dos parênteses.\n3. Preserve formatação: quebras de linha (\\n), espaços no início/fim.\n4. Nomes próprios (Sybil, Princess) NÃO traduzir.\n5. Nomes de botões e teclas (X Button, A Button, Space bar, LB, RB, RT, LT, Q Key, F Key) NÃO traduzir.\n6. Preserve pontuação especial: ..., !, ?, parênteses, aspas.\n7. Nomes de habilidades e armas NÃO traduzir: Dream Breaker, Sun Greaves, Cling Gem, Ascendant Light, Soul Cutter, Solar Wind, Aerial Finesse, Good Graces, Martial Prowess, Heavenly Body, Clear Mind, Heliiacal Power, Higher Power, Nostalgia.",
+
+  "skip_regex": [
+    "^/Game/",
+    "^/Script/",
+    "^/Engine/",
+    "^[a-z][a-zA-Z0-9]+$",
+    "^[0-9A-F]{16,}$"
+  ],
+
+  "manual": {
+    "EXAMINE":    "EXAMINAR",
+    "REFLECT":    "REFLETIR",
+    "Continue":   "Continuar",
+    "New Game":   "Novo Jogo",
+    "Quit":       "Sair",
+    "Options":    "Opcoes",
+    "Back":       "Voltar",
+    "Cancel":     "Cancelar",
+    "Confirm":    "Confirmar",
+    "On":         "Ligado",
+    "Off":        "Desligado",
+    "Fullscreen": "Tela Cheia",
+    "Credits":    "Creditos",
+    "Save":       "Salvar",
+    "Load":       "Carregar",
+    "Delete":     "Deletar",
+    "Resume":     "Retomar",
+    "Settings":   "Configuracoes",
+    "Dream Breaker":   "Dream Breaker",
+    "Sun Greaves":     "Sun Greaves",
+    "Cling Gem":       "Cling Gem",
+    "Ascendant Light": "Ascendant Light",
+    "Soul Cutter":     "Soul Cutter",
+    "Solar Wind":      "Solar Wind",
+    "Aerial Finesse":  "Aerial Finesse",
+    "Good Graces":     "Good Graces",
+    "Martial Prowess": "Martial Prowess",
+    "Heavenly Body":   "Heavenly Body",
+    "Clear Mind":      "Clear Mind",
+    "Heliiacal Power": "Heliiacal Power",
+    "Higher Power":    "Higher Power",
+    "Nostalgia":       "Nostalgia",
+    "Gained a new outfit!": "Voce ganhou uma nova roupa!",
+    "a Guardian":      "uma Guardia",
+    "a Bleeding Heart": "um Coracao Sangrando"
+  }
+}

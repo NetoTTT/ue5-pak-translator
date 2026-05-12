@@ -1,0 +1,37 @@
+# Pseudoregalia — list of assets to extract and translate
+# One pak-relative path per line. Lines starting with # are ignored.
+# Used by: TextTool extract / import / roundtrip (pass this file as last arg)
+
+# DataTables (game data)
+pseudoregalia/Content/Data/DataTables/DT_NoteData.uasset
+pseudoregalia/Content/Data/DataTables/DT_UpgradeData.uasset
+pseudoregalia/Content/Data/DataTables/DT_OutfitData.uasset
+
+# Maps (in-world text, NPC dialogue via TextRender components)
+pseudoregalia/Content/Maps/Zone_Caves.umap
+pseudoregalia/Content/Maps/ZONE_Dungeon.umap
+pseudoregalia/Content/Maps/ZONE_Exterior.umap
+pseudoregalia/Content/Maps/Zone_Library.umap
+pseudoregalia/Content/Maps/ZONE_LowerCastle.umap
+pseudoregalia/Content/Maps/Zone_PrincessChambers.umap
+pseudoregalia/Content/Maps/Zone_Theatre.umap
+pseudoregalia/Content/Maps/Zone_Tower.umap
+pseudoregalia/Content/Maps/Zone_Upper.umap
+pseudoregalia/Content/Maps/EndScreen.umap
+pseudoregalia/Content/Maps/TitleScreen.umap
+
+# UI Widgets
+pseudoregalia/Content/UI/UI_DialoguePrompt.uasset
+pseudoregalia/Content/UI/UI_PauseMenu.uasset
+pseudoregalia/Content/UI/UI_OptionsMenu.uasset
+pseudoregalia/Content/UI/UI_NewUpgradePrompt.uasset
+pseudoregalia/Content/UI/UI_Note.uasset
+pseudoregalia/Content/UI/title/UI_Credits.uasset
+pseudoregalia/Content/UI/title/UI_MainMenu.uasset
+pseudoregalia/Content/UI/title/UI_FileSelect.uasset
+pseudoregalia/Content/UI/title/UI_FileSlot.uasset
+pseudoregalia/Content/UI/UI_Ending.uasset
+pseudoregalia/Content/UI/UI_ThankYou.uasset
+
+# Blueprints
+pseudoregalia/Content/Blueprints/BP_NPC_Child.uasset

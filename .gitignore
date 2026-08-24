@@ -1,6 +1,7 @@
 # Build output
 TextTool/bin/
 TextTool/obj/
+TextTool/publish/
 
 # Translation output (potentially large, generated)
 output/
@@ -12,6 +13,7 @@ tools/*.dll
 # Extracted game files (too large, not redistributable)
 Extracted/
 ModFiles/
+ModFiles_PL/
 
 # OS
 .DS_Store

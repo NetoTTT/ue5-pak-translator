@@ -1,5 +1,7 @@
 # ue5-pak-translator
 
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 A pipeline for translating Unreal Engine 5 games by patching `.uasset` / `.umap` files inside `.pak` archives.
 
 Built for **Pseudoregalia** (PT-BR), but designed to work with any UE5 game that stores text in DataTables, UI Widgets, or Maps.
@@ -182,6 +184,14 @@ TextTool [--engine VER_UE5_1] roundtrip <pak_root> <out_dir>         [assets.txt
 - `--engine` sets the UAssetAPI `EngineVersion` enum value. Can also be set via `TEXTTOOL_ENGINE` env var.
 - `roundtrip` reads every asset and writes it back unchanged — useful to verify UAssetAPI can parse your game's assets before translating.
 - `import` processes only files that have at least one non-empty `Translated` field in the JSON, so you can safely run it with a partially translated file.
+
+---
+
+## License
+
+MIT — see [LICENSE](LICENSE). Feel free to fork and adapt this for other UE5 games or languages; credit is appreciated but not required.
+
+Third-party tools used (not redistributed here, see [tools/README.md](tools/README.md)): [repak](https://github.com/trumank/repak) (MIT/Apache-2.0), [UAssetAPI](https://github.com/atenfyr/UAssetAPI) (MIT).
 
 ---
 
